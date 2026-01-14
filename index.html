@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>ProjectNest Technologies</title>
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -118,6 +119,17 @@
   fetch("includes/footer.html")
     .then(res => res.text())
     .then(data => document.getElementById("footer").innerHTML = data);
+
+    fetch("includes/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+
+      // Now footer exists — update year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    })
+    .catch(err => console.error("Footer load failed", err));
 </script>
 </body>
 </html>

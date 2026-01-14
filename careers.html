@@ -99,6 +99,17 @@
     .then(res => res.ok ? res.text() : Promise.reject(res))
     .then(data => document.getElementById("footer").innerHTML = data)
     .catch(() => console.error("Footer load failed"));
+
+    fetch("includes/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+
+      // ✅ Now footer exists — update year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    })
+    .catch(err => console.error("Footer load failed", err));
 </script>
 
 </body>
