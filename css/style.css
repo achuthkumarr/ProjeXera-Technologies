@@ -207,7 +207,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff;
+  color: #3a75b4;
 }
 
 .footer-bottom {
@@ -252,4 +252,232 @@ body {
 footer {
   background-color: var(--dark);
   color: #fff;
+}
+
+/* =========================
+   LOGO (SVG)
+========================= */
+.logo-svg {
+  height: 70px;      /* adjust as needed */
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-svg {
+    height: 34px;
+  }
+}
+
+/* =========================
+   FOOTER LOGO FIX
+========================= */
+.footer-logo-wrapper {
+  max-width: 150px;        /* controls layout width */
+}
+
+.footer-logo-img {
+  max-width: 200px;       
+  height: auto;            
+  display: block;
+}
+
+/* Footer text */
+.footer-text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 12px;
+  line-height: 1.2;
+
+}
+
+/* =========================
+   FOOTER LAYOUT
+========================= */
+footer {
+  background-color: #1f3a5a; /* matches your screenshot */
+  padding: 50px 0 0;
+}
+
+.footer-bottom {
+  background-color: #172f4d;
+  color: #ffffffaa;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE FIX
+========================= */
+@media (max-width: 768px) {
+  .footer-logo-wrapper {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* =========================
+   CAREERS PAGE
+========================= */
+
+.career-box {
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.career-box h5 {
+  font-weight: 600;
+}
+
+.career-box ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.career-box ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+/* =========================
+   CAREERS PAGE FIX
+========================= */
+.careers-section {
+  background-color: #f8f9fb;
+}
+
+.career-content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.career-content h3 {
+  font-weight: 700;
+}
+
+.career-content p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.career-content hr {
+  width: 60px;
+  border-top: 3px solid #0d6efd;
+  margin: 20px 0;
+}
+
+.career-img {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .career-content {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .career-content hr {
+    margin: 20px auto;
+  }
+}
+/* =========================
+   ORANGE INFO STRIP
+========================= */
+.info-strip {
+  background-color: #f2a64a;
+  padding: 25px 0;
+}
+
+.info-strip p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+/* =========================
+   DOMAIN CARDS
+========================= */
+.domain-section {
+  background: #f7f9fb;
+}
+
+.domain-card {
+  background: #fff;
+  padding: 35px 25px;
+  height: 100%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.domain-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.domain-card .sub-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.domain-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #444;
+}
+/* INTRO */
+.highlight-text {
+  color: #f39c12;
+}
+
+.intro-images {
+  position: relative;
+}
+
+.small-img {
+  width: 60%;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+}
+
+/* SERVICES */
+.services-home {
+  background: #f7f9fb;
+}
+
+.service-box {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 18px;
+  border: 1px solid #333;
+  font-size: 14px;
+}
+
+/* CTA */
+.cta-home {
+  background: #222;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.cta-home h2 {
+  font-size: 42px;
+  font-weight: 700;
 }

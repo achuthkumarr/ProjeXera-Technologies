@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProjectNest Technologies</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<!-- HEADER -->
+<div id="header"></div>
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <h2>About Us</h2>
+    <p class="breadcrumb-text">Home / About Us</p>
+  </div>
+</section>
+<!-- ABOUT CONTENT -->
+<section class="container py-5">
+  <div class="row align-items-center">
+
+    <!-- Text Content -->
+    <div class="col-lg-7 mb-4">
+      <h3 class="mb-3">Who We Are</h3>
+      <p>
+        ProjectNest Technologies is a fast-growing organization focused on delivering
+        innovative academic projects, internships, and software solutions for students
+        and professionals.
+      </p>
+
+      <p>
+        We specialize in providing real-time, industry-oriented projects for
+        BE, MTech, Diploma, BCA, MCA, and other technical students, helping them bridge
+        the gap between academic learning and industry requirements.
+      </p>
+
+      <p>
+        Our experienced mentors guide students through every stage of project
+        development — from idea selection to implementation and documentation.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div class="col-lg-5">
+      <img src="images/about.jpg" alt="About ProjectNest"
+           class="img-fluid rounded shadow">
+    </div>
+
+  </div>
+</section>
+
+<!-- MISSION / VISION -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-6 mb-4">
+        <div class="about-card">
+          <i class="fas fa-bullseye fa-2x mb-3 text-primary"></i>
+          <h5>Our Mission</h5>
+          <p>
+            To empower students with practical knowledge by providing high-quality
+            academic projects, internships, and technical guidance.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="about-card">
+          <i class="fas fa-eye fa-2x mb-3 text-primary"></i>
+          <h5>Our Vision</h5>
+          <p>
+            To become a trusted technology partner for students and institutions by
+            delivering innovative and industry-ready solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="container py-5">
+  <h3 class="text-center mb-4">Why Choose Us</h3>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center">
+        <i class="fas fa-user-graduate fa-2x mb-3 text-primary"></i>
+        <h6>Student-Focused Approach</h6>
+        <p>Projects designed to meet university and industry standards.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center">
+        <i class="fas fa-laptop-code fa-2x mb-3 text-primary"></i>
+        <h6>Industry-Oriented Projects</h6>
+        <p>Real-time technologies with practical implementation.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4 h-100 text-center">
+        <i class="fas fa-headset fa-2x mb-3 text-primary"></i>
+        <h6>Expert Support</h6>
+        <p>Continuous guidance from experienced professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  fetch("includes/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("includes/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
