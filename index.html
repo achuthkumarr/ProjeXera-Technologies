@@ -14,6 +14,42 @@
 <!-- HEADER PLACEHOLDER -->
 <div id="header"></div>
 <!-- PAGE CONTENT -->
+ <section class="hero-slider">
+
+  <!-- SLIDE 1 -->
+  <div class="hero-slide active"
+       style="background-image:url('images/students.jpg');">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Technical Solutions</h1>
+      <p class="hero-subtitle">
+        ProjectNest consulting is a fast growing organization focused on
+        delivering innovative talent solution services
+      </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="hero-slide"
+       style="background-image:url('images/solution.jpg');">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">SOFTWARE SOLUTIONS</h1>
+      <p class="hero-subtitle">
+        We provide scalable, secure and innovative software
+        solutions for growing businesses
+      </p>
+    </div>
+  </div>
+
+  <!-- BUTTONS (COMMON) -->
+  <div class="hero-buttons">
+    <a href="project.html" class="btn hero-btn-fill">Read More</a>
+  </div>
+
+</section>
 
 <section class="container py-5">
   <div class="row align-items-center g-5">
@@ -130,6 +166,33 @@
         new Date().getFullYear();
     })
     .catch(err => console.error("Footer load failed", err));
+
+    const slides = document.querySelectorAll('.hero-slide');
+    let index = 0;
+    
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      slides[index].classList.add('prev');
+      
+      index = (index + 1) % slides.length;
+      
+      slides[index].classList.add('active');
+      
+      slides.forEach((slide, i) => {
+        if (i !== index) slide.classList.remove('prev');
+      });
+    }, 4000);
+    
+  const header = document.getElementById("header-wrapper");
+  const stickyPoint = header.offsetTop;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > stickyPoint) {
+      header.classList.add("header-fixed");
+    } else {
+      header.classList.remove("header-fixed");
+    }
+  });
 </script>
 </body>
 </html>

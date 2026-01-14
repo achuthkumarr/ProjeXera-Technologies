@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Solutions</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- BANNER -->
+<section class="hero-section"
+  style="background-image:url('images/solution.jpg');">
+  <div class="hero-content text-center d-flex align-items-center justify-content-center h-100">
+    <h1>Software Solutions</h1>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="container py-5">
+  <h3 class="mb-4">Software Solutions:</h3>
+
+  <p>
+    We at ProjectNest Solutions provide customized software solutions for various
+    industries that increase productivity and drive company growth.
+  </p>
+
+  <p>
+    Our dedication and commitment to innovation guarantee excellent outcomes.
+    We provide scalable, modular, and stable advanced software solutions.
+  </p>
+
+  <p>
+    Our services include IT consulting, software engineering, product development,
+    solution design, and custom application development using advanced technologies.
+  </p>
+
+  <p>
+    Our expert development team delivers cost-effective software solutions
+    customized according to customer requirements.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+  fetch("includes/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("includes/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+
+    fetch("includes/footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+
+      // Now footer exists — update year
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    })
+    .catch(err => console.error("Footer load failed", err));
+</script>
+
+</body>
+</html>

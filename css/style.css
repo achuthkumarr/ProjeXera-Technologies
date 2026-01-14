@@ -6,13 +6,17 @@ body {
   line-height: 1.6;
   color: #333;
 }
-
-a {
-  text-decoration: none;
-}
-
 section {
   overflow-x: hidden;
+}
+/* =========================
+FIXED STICKY NAVBAR (WORKING)
+========================= */
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 /* =========================
@@ -21,7 +25,7 @@ section {
 .top-bar {
   background-color: #123456;
   color: #fff;
-  font-size: 14px;
+  font-size: 26px;
 }
 
 .top-bar i {
@@ -41,7 +45,9 @@ section {
    NAVBAR
 ========================= */
 .navbar {
-  padding: 12px 0;
+  padding: 10px 0;
+  z-index: 9999;
+  position: fixed;
 }
 
 .navbar-brand {
@@ -105,14 +111,14 @@ TOP BAR CONTACT
   height: 70vh;
   background-size: cover;
   background-position: center;
-  position: relative;
+  position:relative;
 }
 
 .hero-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(53, 52, 52, 0.55);
 }
 
 .hero-content {
@@ -139,7 +145,7 @@ TOP BAR CONTACT
 .page-header {
   background-color: #0d6efd;
   color: #fff;
-  padding: 50px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -496,4 +502,134 @@ FOOTER LOGO FIX
   margin-top: 1px;
   line-height: 1.2;
   
+}
+/* =========================
+HERO SLIDER
+========================= */
+.hero-slider {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1.2s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.hero-slide.prev {
+  transform: translateX(-100%);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero-title {
+  font-size: 46px;
+  letter-spacing: 6px;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+/* =========================
+BUTTONS
+========================= */
+.hero-buttons {
+  position: absolute;
+  z-index: 5;
+  bottom: 70px;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.hero-btn-outline {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 26px;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+
+.hero-btn-outline:hover {
+  background: #f39c12;
+  border-color: #f39c12;
+  color: #4a3333;
+  transform: translateY(-3px);
+}
+
+.hero-btn-fill {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 26px;
+  transition: 0.4s;
+}
+
+.hero-btn-fill:hover {
+  border: #000;
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* =========================
+ANIMATION
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .hero-buttons {
+    bottom: 40px;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
