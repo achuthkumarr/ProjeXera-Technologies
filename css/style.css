@@ -1,0 +1,255 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+/* =========================
+   TOP INFO BAR
+========================= */
+.top-bar {
+  background-color: #123456;
+  color: #fff;
+  font-size: 14px;
+}
+
+.top-bar i {
+  margin-right: 5px;
+}
+
+.top-bar a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+  color: #9fd3ff;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  color: #0d6efd !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* =========================
+   HERO / BANNER SECTION
+========================= */
+.hero-section {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 15px auto;
+}
+
+/* =========================
+   PAGE HEADER (INNER PAGES)
+========================= */
+.page-header {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.page-header h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* =========================
+   SERVICES / CARDS
+========================= */
+.card {
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #084298;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* =========================
+   CAREERS LIST
+========================= */
+.career-list li {
+  background: #f8f9fa;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #0d6efd;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.form-control {
+  border-radius: 0;
+  padding: 10px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #123456;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #ddd;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #0b2c45;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+:root {
+  --primary: #0d6efd;
+  --dark: #123456;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+.navbar-brand {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.top-bar {
+  background-color: var(--dark);
+  color: #fff;
+}
+
+footer {
+  background-color: var(--dark);
+  color: #fff;
+}
