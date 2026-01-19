@@ -9,6 +9,37 @@ body {
 section {
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  .card,
+  .domain-card,
+  .service-box {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 75vh;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+    top: 55%;
+  }
+
+  .hero-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* =========================
 FIXED STICKY NAVBAR (WORKING)
 ========================= */
