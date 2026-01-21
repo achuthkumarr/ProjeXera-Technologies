@@ -664,3 +664,50 @@ ANIMATION
   position: relative;
   margin: auto;
 }
+/* =========================
+HOME CONTACT SECTION
+========================= */
+.home-contact {
+  background: linear-gradient(135deg, #123456, #0d2c4f);
+}
+
+.home-contact h2 {
+  font-weight: 700;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.contact-list i {
+  margin-right: 10px;
+  color: #f2a64a;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-box h4 {
+  font-weight: 600;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .home-contact {
+    text-align: center;
+  }
+
+  .contact-list li {
+    justify-content: center;
+  }
+}
