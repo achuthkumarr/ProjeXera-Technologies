@@ -711,3 +711,393 @@ HOME CONTACT SECTION
     justify-content: center;
   }
 }
+
+/* =========================
+   STATS / ACHIEVEMENTS
+========================= */
+.stats-section {
+  background: linear-gradient(135deg, #0d6efd, #123456);
+  padding: 70px 0;
+  color: #fff;
+}
+
+.stats-title {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.stats-subtitle {
+  color: #d6e4ff;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 35px 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.stat-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ffd166;
+}
+
+.stat-card h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  font-size: 15px;
+  margin: 0;
+  color: #f1f1f1;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .stats-title {
+    font-size: 26px;
+  }
+
+  .stat-card h2 {
+    font-size: 34px;
+  }
+}
+/* =========================
+HOME PAGE – IMPACT SECTION
+========================= */
+.home-impact {
+  background-color: #859fc5;
+}
+
+.impact-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #123456;
+}
+
+.impact-subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+.impact-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  height: 100%;
+}
+
+.impact-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.impact-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+.impact-box h3 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.impact-box p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .impact-title {
+    font-size: 26px;
+  }
+
+  .impact-box h3 {
+    font-size: 32px;
+  }
+}
+
+/* =========================
+SOFTWARE SHOWCASE PAGE
+========================= */
+.software-showcase {
+  background-color: #f8fafc;
+}
+
+.showcase-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #123456;
+}
+
+.showcase-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.showcase-card {
+  background: #e7c6c6;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.showcase-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #5f7291;
+}
+
+.showcase-card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.showcase-card ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Services list */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.services-list span {
+  background: #a9b0d0;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .showcase-title {
+    font-size: 26px;
+  }
+
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* =========================
+STUDENT PROJECTS PAGE
+========================= */
+.student-projects {
+  background-color: #f9fbfd;
+}
+
+.projects-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #123456;
+}
+
+.projects-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.student-card {
+  background: #ceb2b2;
+  padding: 30px 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.student-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.student-card i {
+  font-size: 38px;
+  color: #5b769d;
+  margin-bottom: 15px;
+}
+
+.student-card h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.student-card p {
+  font-size: 14.5px;
+  color: #555;
+  margin: 0;
+}
+
+/* Features */
+.project-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-features span {
+  background: #9ea5de;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 26px;
+  }
+
+  .project-features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* =========================
+HOME PAGE – BUSINESS SHOWCASE
+========================= */
+.home-showcase {
+  background: #ffffff;
+}
+
+.home-showcase-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d2c4f;
+}
+
+.home-showcase-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-top: 8px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-showcase-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.35s ease;
+  border: 1px solid #eef1f6;
+}
+
+.home-showcase-card:hover {
+  transform: translateY(-8px);
+  background: #9c99c6;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.home-showcase-card i {
+  font-size: 34px;
+  color: #82a6db;
+  margin-bottom: 15px;
+}
+
+.home-showcase-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.home-showcase-card p {
+  font-size: 14.5px;
+  color: #555;
+  margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .home-showcase-title {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+DOMAIN SLIDER
+========================= */
+.domain-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.domain-track {
+  display: flex;
+  gap: 25px;
+  animation: slideDomains 20s linear infinite;
+}
+
+.domain-slide {
+  min-width: 320px;
+  flex-shrink: 1;
+}
+
+/* Pause on hover */
+.domain-slider:hover .domain-track {
+  animation-play-state: paused;
+}
+
+/* Animation */
+@keyframes slideDomains {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .domain-slide {
+    min-width: 260px;
+  }
+}
