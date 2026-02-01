@@ -19,7 +19,7 @@ section {
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: 75vh;
+    height: 65vh;
   }
 
   .hero-content {
@@ -138,12 +138,40 @@ TOP BAR CONTACT
 /* =========================
    HERO / BANNER SECTION
 ========================= */
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.hero-nav button {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero-nav button:hover {
+  background: rgba(128, 66, 66, 0.8);
+}
+
 .hero-section {
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   position:relative;
 }
+
 
 .hero-section::before {
   content: "";
@@ -410,7 +438,7 @@ DOMAIN CARDS
   background: #fff;
   padding: 35px 25px;
   height: 100%;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-radius: 1rem;
 }
 
 .domain-card h5 {
@@ -539,7 +567,7 @@ HERO SLIDER
 ========================= */
 .hero-slider {
   position: relative;
-  height: 90vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -550,17 +578,19 @@ HERO SLIDER
   background-position: center;
   opacity: 0;
   transform: translateX(100%);
-  transition: all 1.2s ease;
+  transition: all 0.6s ease;
+  z-index: 1;
 }
 
 .hero-slide.active {
   opacity: 1;
   transform: translateX(0);
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-slide.prev {
   transform: translateX(-100%);
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -604,6 +634,11 @@ BUTTONS
   margin-top: 25px;
 }
 
+.hero-btn-fill{
+color: #fff;
+text-decoration: none;
+}
+
 .hero-btn-outline {
   color: #fff;
   border: 1px solid #fff;
@@ -615,7 +650,7 @@ BUTTONS
 .hero-btn-outline:hover {
   background: #f39c12;
   border-color: #f39c12;
-  color: #4a3333;
+  color: #44598b;
   transform: translateY(-3px);
 }
 
@@ -623,13 +658,14 @@ BUTTONS
   color: #fff;
   border: 1px solid #fff;
   padding: 10px 26px;
-  transition: 0.4s;
+  border-radius: 1.25rem;
+  /* transition: 0.4s; */
 }
 
 .hero-btn-fill:hover {
   border: #000;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   transform: translateY(-3px);
 }
 
@@ -1007,13 +1043,13 @@ HOME PAGE – BUSINESS SHOWCASE
 }
 
 .home-showcase-title {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: 700;
   color: #0d2c4f;
 }
 
 .home-showcase-subtitle {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
   margin-top: 8px;
   max-width: 720px;
@@ -1072,7 +1108,7 @@ DOMAIN SLIDER
 .domain-track {
   display: flex;
   gap: 25px;
-  animation: slideDomains 20s linear infinite;
+  animation: slideDomains 10s linear infinite;
 }
 
 .domain-slide {
@@ -1099,5 +1135,8 @@ DOMAIN SLIDER
 @media (max-width: 768px) {
   .domain-slide {
     min-width: 260px;
+  }
+  .domain-track{
+    animation: slideDomains 5s linear infinite;
   }
 }
