@@ -289,6 +289,9 @@ RESPONSIVE
   .hero-content p {
     font-size: 16px;
   }
+ .hero-nav button {
+  display: none;
+ } 
 }
 :root {
   --primary: #0d6efd;
